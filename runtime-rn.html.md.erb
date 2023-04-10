@@ -289,7 +289,7 @@ compatible with syslog servers which:
 Developers can configure their syslog drains to use Mutual TLS by specifying a
 client certificate and private key. They can also configure their syslog drains
 to communicate with syslog servers using internal or domain-specific
-Certificate Authorities by specifying a CA. An example is provided below.
+Certificate Authorities by specifying a CA. An example follows;
 
 <pre class="terminal">
 $ cf create-user-provided-service DRAIN-NAME -l SYSLOG-URL -p {"cert":"-----BEGIN CERTIFICATE-----\nMIIH...-----END CERTIFICATE-----","key":"-----BEGIN PRIVATE KEY-----\nMIIE...-----END PRIVATE KEY-----", "ca":"-----BEGIN CERTIFICATE-----\nMIIH...-----END CERTIFICATE-----"}
